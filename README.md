@@ -31,7 +31,8 @@ Okullardaki ekranlar çoğu zaman ya boş durur ya da aylarca aynı slaytı gös
 - Sırayla dönen içerik kutusu: duyuru, resim, video, PDF, sunu ve modüller
 - Kayan yazı, acil duyuru (tek dokunuşla tüm ekranı kaplar)
 - Turnuva tabloları: tek eleme, çift eleme, lig, grup + eleme; kura çekimi dahil
-- Ek modüller: sınav geri sayımı, günün sözü, nöbetçi öğretmen, etkinlikler, başarılar, doğum günleri, QR kod
+- Ek modüller: sınav takvimi, geri sayım, günün sözü, nöbetçi öğretmen, etkinlikler, başarılar, doğum günleri, galeri, QR kod
+- Her kutu boyutuna göre ayrı tasarlanmış görünüm; uzun yazılar kesilmeden sığdırılır
 - Dokunma kilidi: ekrana dokunmak hiçbir şeyi değiştirmez
 
 **Yönetimde**
@@ -47,7 +48,7 @@ Okullardaki ekranlar çoğu zaman ya boş durur ya da aylarca aynı slaytı gös
 - Bilgisayar açılınca panoyu kendiliğinden başlatır (60 sn içinde vazgeçilebilir)
 - Son dersten sonra bilgisayarı kapatır (iptal edilebilir uyarıyla)
 - Hocalar için okul ağı adresi ve karekod
-- Yeni sürümleri kendiliğinden kurar; sorun olursa eski sürüme döner
+- Yeni sürümleri ders dışında kendiliğinden kurar; veri korunur
 
 ## Görüntüler
 
@@ -70,20 +71,17 @@ Okullardaki ekranlar çoğu zaman ya boş durur ya da aylarca aynı slaytı gös
 
 ### Windows uygulaması (önerilen)
 
-1. `OpenBoard-windows-<sürüm>.zip` dosyasını sağ tıklayıp **Tümünü ayıkla** ile bir klasöre açın.
-2. `OpenBoard/OpenBoard.exe` dosyasını çalıştırın. Uygulama kendini kurar ve masaüstüne kısayol ekler.
-3. Açılan pencerede okul adını, il/ilçeyi ve yönetici hesabını girin. Başka bir bilgisayardan geçiyorsanız **Başka cihazdan aktar** ile yedek dosyanızı seçin.
-4. **Panoyu başlat**. Yönetim için pencerede yazan adresi telefonunuzdan açın ya da karekodu okutun.
+1. `OpenBoard-Kurulum-<sürüm>.exe` dosyasını indirip çalıştırın. Kurulum tek pencerede biter, masaüstüne kısayol eklenir.
+2. Açılan pencerede okul adını, il/ilçeyi ve yönetici hesabını girin. Başka bir bilgisayardan geçiyorsanız **Başka cihazdan aktar** ile yedek dosyanızı seçin.
+3. **Panoyu başlat**. Yönetim için pencerede yazan adresi telefonunuzdan açın ya da karekodu okutun.
 
-### Yalnız sunucu (Electron'suz)
-
-`openboard-sunucu-windows-<sürüm>.zip` dosyasını açın, `KUR.cmd` dosyasına çift tıklayın. `C:\OpenBoard` içine kurulur, oturum açılınca pano tam ekran başlar.
+Windows "bilinmeyen yayıncı" uyarısı verirse **Ek bilgi → Yine de çalıştır** deyin.
 
 İsteğe bağlı: sunu ve PDF dönüştürmek için LibreOffice ve Poppler, video dönüştürmek için ffmpeg.
 
 ## Güncellemeler
 
-Windows uygulaması açılışta ve altı saatte bir bu depoyu kontrol eder. Yeni sürüm bulduğunda indirir, SHA-256 değerini doğrular ve veriye dokunmadan uygulamayı yeniler. Yeni sürüm açılmazsa eskisine döner. İsterseniz otomatik güncellemeyi başlatıcının Ayarlar bölümünden kapatabilirsiniz.
+Windows uygulaması saatte bir bu depoyu kontrol eder ve yeni sürümü arka planda indirir. Ders sırasında pano asla kendiliğinden kapanmaz; güncelleme sabah açılışta, akşam otomatik kapatmadan hemen önce ya da yönetimden **Şimdi güncelle** ile kurulur. İndirilen paketin bütünlüğü doğrulanır, kurulumdan önce verinin yedeği alınır; duyurular, düzen ve ayarlar olduğu gibi kalır. Otomatik güncelleme başlatıcının Ayarlar bölümünden kapatılabilir.
 
 <a id="lisans"></a>
 ## Lisans
