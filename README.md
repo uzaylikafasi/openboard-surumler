@@ -150,6 +150,8 @@ Araç kurulu değilse o sunu ya da PDF panoda atlanır, pano çalışmaya devam 
 
 Aynı yerden **Turnuva skoru gir** ile maç sonucunu yazarsın, tablo kendiliğinden ilerler. Acil bir durumda **Acil duyuru** yazdığın metni bütün ekranda gösterir. Panonun düzenini değiştirmek için **Düzen** sayfasında kutuları sürükleyip **Yayınla** dersin.
 
+Her özelliğin adım adım anlatımı: [Kullanım rehberi](docs/kullanim-rehberi.md)
+
 ## Nasıl çalışır?
 
 Tahta bilgisayarına kurulan uygulama iki iş yapar: okul ağında küçük bir sunucu açar ve panoyu tam ekran gösterir. Öğretmenler bu sunucunun yönetim sayfasına aynı ağdaki telefon ya da bilgisayardan girer. Bir değişiklik yayınlanınca sunucu panoya haber verir, pano yeniden çizilir. Bütün veri tahta bilgisayarındaki tek bir veritabanı dosyasında durur; bulut hesabı, üyelik ya da kiralık sunucu gerekmez. Hava durumu ve okul haberleri yarım saatte bir internetten alınır, son alınan bilgi saklanır; bağlantı kesilirse o gösterilir.
