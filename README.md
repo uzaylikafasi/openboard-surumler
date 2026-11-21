@@ -111,7 +111,30 @@ Okulumuzun kantinindeki akıllı tahta bütün gün açık duruyordu ama ya boş
 - Windows 10 veya 11, 64 bit
 - Öğretmenlerin telefonu ya da bilgisayarı tahtayla aynı okul ağında olmalı
 - İnternet yalnız hava durumu, haberler, YouTube ve güncellemeler için gerekir
-- İsteğe bağlı: sunu dönüştürmek için LibreOffice, PDF için Poppler, video dönüştürmek için ffmpeg
+- İsteğe bağlı: sunu dönüştürmek için LibreOffice, PDF için Poppler, video dönüştürmek için ffmpeg (aşağıda)
+
+</details>
+
+<details>
+<summary>Ek araçlar: sunu, PDF ve video için</summary>
+
+OpenBoard fotoğrafı ve duyuruyu tek başına gösterir. PowerPoint sunusu, PDF ve farklı biçimdeki videolar için tahta bilgisayarına şu ücretsiz araçlardan gerekenleri kur:
+
+| Ne için | Araç | Kurulum |
+|---|---|---|
+| PowerPoint (`.pptx`, `.ppt`) ve `.odp` sunu | LibreOffice | Komut İstemi'nde `winget install --id TheDocumentFoundation.LibreOffice -e` ya da [libreoffice.org](https://www.libreoffice.org/download/download/) |
+| PDF | Poppler | [Poppler Windows paketini](https://github.com/oschwartz10612/poppler-windows/releases) indir, bir klasöre çıkar (ör. `C:\poppler`) |
+| Video dönüştürme | ffmpeg | Komut İstemi'nde `winget install --id Gyan.FFmpeg -e` |
+
+Sonra OpenBoard'a nerede olduklarını göster:
+
+1. LibreOffice varsayılan yere (`C:\Program Files\LibreOffice`) kurulduysa bir şey yapma, kendiliğinden bulunur.
+2. Yönetimde **Ayarlar → Tahta saatleri** sekmesini aç. Altta **LibreOffice yolu**, **Poppler pdftoppm yolu**, **Poppler pdfinfo yolu** ve **Video dönüştürücü yolu** alanları var.
+3. Poppler için `pdftoppm.exe` ve `pdfinfo.exe` dosyalarının tam yolunu yaz (ör. `C:\poppler\Library\bin\pdftoppm.exe`). Aynı klasördeki diğer dosyaları silme.
+4. ffmpeg'i winget ile kurduysan alanda `ffmpeg` yazılı kalabilir; başka yere çıkardıysan `ffmpeg.exe` dosyasının tam yolunu yaz.
+5. Kaydet. Önceden dönüştürülemeyen bir dosya varsa **İçerikler**de o dosyanın **Yeniden dene** düğmesine bas.
+
+Araç kurulu değilse o sunu ya da PDF panoda atlanır, pano çalışmaya devam eder. ffmpeg yoksa video dönüştürülmeden, olduğu gibi oynatılır.
 
 </details>
 
